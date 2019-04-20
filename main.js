@@ -104,13 +104,13 @@ window.onload = function(){
     let answerText = e.target.children[e.target.children.length - 1].id;
       let timer = 0;
       let colors = ["green", "red"];
-      let x = 0;
+      let num = 0;
       
       //change between colors.
       answer.style.backgroundColor = 'green';
       let suspense = setInterval(function(){
-        answer.style.backgroundColor = colors[x];
-        x ^= 1; //change value of x between 0 and 1
+        answer.style.backgroundColor = colors[num];
+        num == 1 ? num-- : num++; //change value of x between 0 and 1
         
         timer++;
         if(timer == 8){
