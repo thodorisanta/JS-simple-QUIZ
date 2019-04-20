@@ -3,6 +3,43 @@ body{
   margin: 0;
 }
 
+#scoreMessage{
+  display: none;
+  background: #555ddd;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 50px;
+  z-index: 1;
+}
+
+#retry{
+  display: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #90EE90;
+  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-70%);
+  font-size: 20px;
+}
+#retry:hover{
+  background: red;
+}
+
+#questionsNum{
+  border: 1px solid black;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
 #box{
   width: 800px;
   height: 350px;
@@ -56,9 +93,10 @@ hr{
   cursor: pointer;
 }
 
-#correct{
+#message{
   position: relative;
+  font-size: 23px;
   top: 10%;
-  left: 42.5%;
+  left: 43%;
   transform: translateY(50%)
 }
