@@ -146,7 +146,7 @@ window.onload = function(){
     }
     
     questionsArr.splice(random, 1);
-    if(questionsArr.length <= 9){
+    if(questionsArr.length <= 0){
       document.getElementById("questionsBox").style.display = "none";
       document.getElementById("answersBox").style.display = "none";
       document.getElementById("scoreMessage").style.display = "block";
